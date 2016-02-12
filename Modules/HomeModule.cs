@@ -47,6 +47,11 @@ namespace Cdlist
         bank.Add("title", artistTitles);
         return View["artist_title_form.cshtml", bank];
       };
+      Get["/artist_title"] = _ => 
+      {
+        Cd newCd = newCd(Request.Form["cd-title"]);
+        List<Cd> allcds = cd
+      }
       Post["/view_title"] = _ =>
       {
         string artist = Request.Form["artist"];
