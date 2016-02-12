@@ -1,0 +1,7 @@
+<h1>Titles:</h1>
+<ol>
+  @foreach (var title in @Model["title"])
+  {
+    <li>@title.GetTitle()</li>
+  }
+</ol>

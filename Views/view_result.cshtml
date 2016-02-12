@@ -1,0 +1,8 @@
+<h1>Search results</h1>
+<ul>
+  @foreach(var artist in Model)
+  {
+    <h3><a href="/search_artist/@artist.GetId()">@artist.GetArtist()</a></h3>
+  }
+</ul>
+<p><a href="/">Add another CD</a></p>
